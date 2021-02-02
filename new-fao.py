@@ -4,7 +4,8 @@ import numpy as np
 
 st.title('New Food Balances')
 
-DATA_URL = ('https://fao-apps-data.s3-eu-west-1.amazonaws.com/FoodBalanceSheets_E_All_Data_Normalized.csv')
+#Download the CSV file from FAO website and upload it to your own AWS S3 bucket. Paste the url below.
+DATA_URL = ('https://your-bucket.s3-eu-west-1.amazonaws.com/FoodBalanceSheets_E_All_Data_Normalized.csv')
 
 @st.cache
 def load_data(nrows):
